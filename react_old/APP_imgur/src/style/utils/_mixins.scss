@@ -1,0 +1,21 @@
+@mixin link-style {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  font-family: inherit;
+  text-align: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin flexie {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

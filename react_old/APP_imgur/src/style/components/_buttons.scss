@@ -1,0 +1,15 @@
+.btn {
+  @include link-style;
+  &--search {
+
+  }
+  &--topic {
+    background-color: $green-imgur;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
