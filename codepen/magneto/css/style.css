@@ -1,0 +1,25 @@
+.wrapper {
+  width: 240px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  border-radius: 50%;
+  border: 20px solid #00f;
+}
+.circle:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 20px solid #f00;
+  border-right-color: transparent;
+}

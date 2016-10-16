@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <style media="screen">
+    input[type="file"] ~ label div {
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px 0;
+
+    text-align: center;
+    color: black;
+
+    background: #c2c2c2;
+    border: 3px solid black;
+
+    cursor: pointer;
+    }
+
+    input[type="file"] ~ label div:hover {
+    background: pink;
+    }
+  </style>
+
+  <form method="post" class="main-form">
+    <input type="file" name="images" id="upload-photo" multiple hidden>
+    <label for="upload-photo">
+      <div>Upload img</div>
+    </label>
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>

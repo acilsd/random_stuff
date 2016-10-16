@@ -1,0 +1,25 @@
+.wrapper
+  width 240px
+  height 100px
+  position relative
+  overflow hidden
+  
+.circle
+  width 200px
+  height 200px
+  background transparent
+  border-radius 50%
+  border 20px solid blue
+  &:after
+    position absolute
+    top 0
+    left 0
+    content ''
+    display block
+    width 200px
+    height 200px
+    border-radius 50%
+    border 20px solid red
+    border-right-color transparent
+    // transform rotate(0deg)
+  

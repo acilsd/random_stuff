@@ -1,0 +1,19 @@
+input {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 24px 22%;
+  box-sizing: border-box;
+  font-size: 48px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: bold;
+  outline: 0;
+}
+
+body {
+  transition: background 0.5s;
+}

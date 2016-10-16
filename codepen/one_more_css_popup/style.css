@@ -1,0 +1,85 @@
+.popup__form {
+ position: fixed;
+ padding: 55px 80px 0px;
+ width: 471px;
+ z-index: 100;
+ top: 20%;
+ left: 50%;
+ margin-left: -315px;
+ background-color: #FFF;
+ box-shadow: 0px 0px 53px -8px #000;
+}
+
+.window-container {
+  margin-bottom: 25px;
+}
+.container-left {
+  float: left;
+  width: 220px;
+}
+.container-right {
+  float: right;
+  width: 220px;
+}
+.window-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.window-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-weight: 500;
+}
+.window-container input[placeholder], .window-container textarea[placeholder] {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.window-container input[type="text"] {
+  display: block;
+  padding: 9px 15px;
+  width: 186px;
+  border: 2px solid #D7DCDE;
+  border-radius: 5px;
+  }
+.popup-textarea textarea {
+  display: block;
+  border: 2px solid #D7DCDE;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 436px;
+  height: 86px;
+  resize: none;
+}
+
+.form-buttons {
+  margin: 48px 0px;
+}
+.submit {
+  float: left;
+}
+.cancel {
+  float: right;
+}
+.form-btn {
+  width: 220px;
+  background-color: #FB565A;
+  border-top: 3px solid #FB565A;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 500;
+  outline: medium none;
+}
+
+.form-buttons::after {
+  content: "";
+  display: table;
+  clear: both;
+}

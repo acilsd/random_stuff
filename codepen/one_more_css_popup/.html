@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="popup__form">
+
+    <form class="popup-window-form" action="index.html" method="post">
+      <div class="window-container">
+        <div class="container-left">
+          <label for="user-name">Ваше имя</label>
+          <input type="text" name="username" placeholder="Представьтесь пожалуйста" id="user-name">
+        </div>
+        <div class="container-right">
+          <label for="user-email">Ваш e-mail</label>
+          <input type="text" name="email" placeholder="Для обратной связи" id="user-email">
+        </div>
+      </div>
+
+      <div class="popup-textarea">
+        <label for="user-message">Текст письма</label>
+        <textarea id="user-message" name="message" placeholder="В свободной форме" ></textarea>
+        <div class="form-buttons">
+          <input class="form-btn submit" type="submit" name="submit" value="Отправить">
+          <input class="form-btn cancel" type="button" name="cancel" value="Отмена">
+        </div>
+      </div>
+  </form>
+</div>
+
+</body>
+</html>

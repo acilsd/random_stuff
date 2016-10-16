@@ -1,0 +1,115 @@
+<div class="page-header">
+  <a href="" class="toggler" id="toggler"><span></span></a>
+
+  <ul class="nav" id="nav">
+    <li class="nav__item"><a href="">Site point 01</a></li>
+    <li class="nav__item"><a href="">Site point 02</a></li>
+    <li class="nav__item"><a href="">Site point 03</a></li>
+    <li class="nav__item"><a href="">Site point 04</a></li>
+    <li class="nav__item"><a href="">Site point 05</a></li>
+  </ul>
+</div>
+
+body {
+  background-color: #000;
+  box-sizing: border-box;
+}
+.page-header {
+  background-color: #777;
+  position: relative;
+  height: 3em;
+}
+.toggler {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  user-select: none;
+}
+.toggler > span {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+  height: .3rem;
+  background: #fff;
+  border-radius: .2rem;
+  position: relative;
+  transition: background .3s .5s;
+}
+.toggler > span:before,
+.toggler > span:after {
+  width: 100%;
+  height: .3rem;
+  background: #fff;
+  border-radius: .2rem;
+  position: absolute;
+  left: 0;
+  content: '';
+  transform-origin: 50% 50%;
+  transition: top .3s .6s, transform .3s;
+}
+.toggler > span:before {
+  top: 1rem;
+}
+.toggler > span:after {
+  top: -1rem;
+}
+.toggler--close > span {
+  transition: background .3s 0;
+  background: transparent;
+}
+.toggler--close > span:before,
+.toggler--close > span:after {
+  transition: top .3s, transform .3s .5s;
+  top: 0;
+}
+.toggler--close > span:before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+.toggler--close > span:after {
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+.nav--visible {
+  display: block;
+}
+.nav__item {
+  display: block;
+}
+.nav__item:first-child a {
+  padding-right: 3em;
+}
+.nav__item a {
+  display: block;
+  padding: 0 1em;
+  height: 3em;
+  line-height: 3;
+  background-color: #777;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1px;
+}
+
+
+
+var toggler = document.getElementById('toggler');
+toggler.onclick = function(e){
+  e.preventDefault();
+  toggler.classList.toggle('toggler--close');
+  document.getElementById('nav').classList.toggle('nav--visible');
+}
